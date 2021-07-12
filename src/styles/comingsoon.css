@@ -1,0 +1,251 @@
+@import url("https://use.typekit.net/oto6qpu.css");
+
+:root {
+  --gradient: linear-gradient(45deg, #dff7fc, rgb(248, 255, 233), #ffdfdb);
+  --text-gradient: linear-gradient(45deg, #d58f85, rgb(120, 181, 108), #5187c5);
+  --a-gradient: linear-gradient(45deg, #af857e, rgb(137, 160, 129), #678d95);
+}
+
+body {
+  font-family: ivypresto-headline, serif;
+  font-weight: 200;
+  font-style: normal;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space space-around;
+  align-items: stretch;
+  text-align: left;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  background: #ddd;
+  background-size: 400%;
+  background-image: var(--gradient);
+  animation: bg-animation 10s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+h1 {
+  font-family: ivypresto-headline, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  color: #333;
+
+  padding: 0.2rem 0.2rem 1rem 0.2rem;
+
+  /* background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate; */
+}
+
+h2 {
+  font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #333;
+  margin-left: 0.5rem;
+  padding: 2rem 0rem 3rem 0rem;
+
+  /* background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate; */
+}
+
+h2 .italic {
+  font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 7rem;
+  line-height: 7rem;
+  color: #333;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 2rem 0.5rem 3rem 0rem;
+
+  background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate;
+}
+
+p {
+  font-family: soleil, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #333;
+  margin: 0.1rem;
+}
+
+.connect {
+  font-family: soleil, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #333;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(75%, 50rem);
+  padding-top: 10em;
+}
+
+.icon {
+  margin: 2rem 2rem 0rem;
+  color: #7ca6ae;
+  font-size: 0.9em;
+
+  /* background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate; */
+}
+
+a:link {
+  text-decoration: underline;
+  color: #333;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+a:focus {
+  text-decoration: none;
+  color: #333;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: 200;
+  cursor: pointer;
+  color: #333;
+}
+
+a:active {
+  text-decoration: none;
+  font-weight: 200;
+  cursor: pointer;
+  color: #333;
+}
+
+a:visited {
+  text-decoration: none;
+  font-weight: 200;
+  cursor: pointer;
+  color: #333;
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    justify-content: start;
+    align-items: tart;
+    margin-inline: auto;
+    padding-top: 0rem;
+    width: min(90%, 80rem);
+    margin-bottom: 5rem;
+  }
+  h1 {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    color: #333;
+    margin: 3rem 0rem 1rem;
+    padding: 0.2rem 0.2rem 1rem 0.2rem;
+  }
+  h2 .italic {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    color: #333;
+      margin: 1rem 0rem 1rem 0rem;
+  padding: 2rem 0.5rem 3rem 0rem;
+
+    background-image: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate;
+  }
+  h2 {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #333;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .container {
+    justify-content: start;
+    align-items: tart;
+    margin-inline: auto;
+    padding-top: 0rem;
+    width: min(95%, 90rem);
+    margin-bottom: 5rem;
+  }
+  h1 {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #333;
+    margin: 3rem 0rem 1rem;
+    padding: 0.2rem 0.2rem 1rem 0.2rem;
+  }
+  h2 .italic {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4.5rem;
+    line-height: 5rem;
+    color: #333;
+
+    background-image: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: bg-animation 10s infinite alternate;
+  }
+  h2 {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4.7rem;
+    line-height: 5rem;
+    color: #333;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 2rem 0rem 3rem 0rem;
+  }
+}

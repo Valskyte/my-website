@@ -1,29 +1,38 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from "react"
+import "../styles/comingsoon.css"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+export default function Home() {
+  return (
+    <section className="container">
+      <header>
+        <h1>Aide Valskyte -</h1>
+      </header>
+      <main>
+      <p>
+        UI/UX Designer utilising diverse work experience and expertise to build
+        digital products that people love. Addressing business objectives while
+        advocating for users. Currently living in Austria.
+      </p>
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
-
-export default IndexPage
+      <h2>
+        project case studies - <span className="italic">COMING SOON</span>
+      </h2>
+      </main>
+      <footer>
+      <p className="connect">
+        {" "}
+        <a href="mailto:aide.valskyte@gmail.com">aide.valskyte@gmail.com</a>
+      </p>
+      <p >
+        {" "}
+        <a className="connect"
+          href="https://www.linkedin.com/in/aide-valskyte-a5112918/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </p>
+       </footer>
+    </section>
+  )
+}

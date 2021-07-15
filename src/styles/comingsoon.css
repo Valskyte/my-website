@@ -1,9 +1,9 @@
 @import url("https://use.typekit.net/oto6qpu.css");
 
 :root {
-  --gradient: linear-gradient(45deg, #dff7fc, rgb(248, 255, 233), #ffdfdb);
-  --text-gradient: linear-gradient(45deg, #d58f85, rgb(120, 181, 108), #5187c5);
-  --a-gradient: linear-gradient(45deg, #af857e, rgb(137, 160, 129), #678d95);
+  --gradient: linear-gradient(70deg, #fff1d8, rgb(255, 224, 224), #fff1d8);
+  --text-gradient: linear-gradient(70deg, #f48b78, rgb(129, 35, 138), #f07a65);
+
 }
 
 body {
@@ -12,13 +12,13 @@ body {
   font-style: normal;
   min-height: 100vh;
   display: flex;
-  justify-content: space space-around;
-  align-items: stretch;
+  justify-content: center;
+  align-items: start;
   text-align: left;
   font-size: 1.2em;
   line-height: 1.6;
   color: #333;
-  background: #ddd;
+  background: rgb(255, 255, 255);
   background-size: 400%;
   background-image: var(--gradient);
   animation: bg-animation 10s infinite;
@@ -36,6 +36,13 @@ body {
   }
 }
 
+.container {
+  margin-inline: auto;
+  width: min(75%, 50rem);
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
 h1 {
   font-family: ivypresto-headline, serif;
   font-style: italic;
@@ -45,12 +52,6 @@ h1 {
   color: #333;
 
   padding: 0.2rem 0.2rem 1rem 0.2rem;
-
-  /* background-image: var(--text-gradient);
-  background-clip: text;
-  color: transparent;
-  background-size: 400%;
-  animation: bg-animation 10s infinite alternate; */
 }
 
 h2 {
@@ -60,25 +61,20 @@ h2 {
   font-size: 5rem;
   line-height: 5rem;
   color: #333;
-  margin-left: 0.5rem;
-  padding: 2rem 0rem 3rem 0rem;
+  margin: 3rem 3rem 0rem 1rem;
+  padding: 2rem 0rem 1rem 0rem;
 
-  /* background-image: var(--text-gradient);
-  background-clip: text;
-  color: transparent;
-  background-size: 400%;
-  animation: bg-animation 10s infinite alternate; */
 }
 
-h2 .italic {
+.italic {
   font-family: ivypresto-headline, serif;
   font-weight: 700;
   font-style: italic;
   font-size: 7rem;
   line-height: 7rem;
   color: #333;
-  margin: 1rem 0rem 1rem 0rem;
-  padding: 2rem 0.5rem 3rem 0rem;
+  margin: 0rem 0rem 5rem 0rem;
+  z-index: 10;
 
   background-image: var(--text-gradient);
   background-clip: text;
@@ -104,37 +100,23 @@ p {
   font-size: 1.3rem;
   line-height: 1.7rem;
   color: #333;
-  margin: 0rem 0rem 1rem 0rem;
-}
-
-.container {
-  margin-inline: auto;
-  width: min(75%, 50rem);
-  padding-top: 10em;
-}
-
-.icon {
-  margin: 2rem 2rem 0rem;
-  color: #7ca6ae;
-  font-size: 0.9em;
-
-  /* background-image: var(--text-gradient);
-  background-clip: text;
-  color: transparent;
-  background-size: 400%;
-  animation: bg-animation 10s infinite alternate; */
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-around;
+  
 }
 
 a:link {
   text-decoration: underline;
-  color: #333;
+  color:  rgb(129, 35, 138);
   font-weight: 200;
   cursor: pointer;
 }
 
 a:focus {
-  text-decoration: none;
-  color: #333;
+  text-decoration: underline;
+  color:  rgb(129, 35, 138);
   font-weight: 200;
   cursor: pointer;
 }
@@ -143,50 +125,113 @@ a:hover {
   text-decoration: none;
   font-weight: 200;
   cursor: pointer;
-  color: #333;
+  color:  rgb(129, 35, 138);
 }
 
 a:active {
-  text-decoration: none;
+text-decoration: underline;
+
   font-weight: 200;
   cursor: pointer;
-  color: #333;
+  color:  rgb(129, 35, 138);
 }
 
 a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 200;
   cursor: pointer;
-  color: #333;
+  color:  rgb(129, 35, 138);
 }
 
-@media all and (max-width: 500px) {
+.link{
+  padding-bottom: 1rem;
+}
+
+
+@media all and (max-width: 600px) {
   .container {
     justify-content: start;
     align-items: tart;
     margin-inline: auto;
     padding-top: 0rem;
     width: min(90%, 80rem);
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
   h1 {
     font-family: ivypresto-headline, serif;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #333;
+    margin: 4rem 0rem 1rem;
+  }
+h2 {
+  font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #333;
+  margin: 3rem 3rem 0rem 1rem;
+  padding: 2rem 0rem 1rem 0rem;
+
+}
+
+.italic {
+  font-family: ivypresto-headline, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5rem;
+  line-height: 5rem;
+  color: #333;
+  margin: 0rem 0rem 5rem 0rem;
+  z-index: 10;
+
+  background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 400%;
+  animation: bg-animation 10s infinite alternate;
+}
+.connect {
+  font-family: soleil, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #333;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+}
+
+@media all and (max-width: 400px) {
+.container {
+    justify-content: start;
+    align-items: tart;
+    margin-inline: auto;
+    width: min(95%, 90rem);
+    margin-bottom: 0rem;
+}
+    
+  h1 {
+    font-family: ivypresto-headline, serif;
+    font-weight: 700;
+    font-size: 2rem;
     line-height: 2rem;
     color: #333;
     margin: 3rem 0rem 1rem;
     padding: 0.2rem 0.2rem 1rem 0.2rem;
   }
-  h2 .italic {
+ .italic {
     font-family: ivypresto-headline, serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 5rem;
+    font-size: 5.3rem;
     line-height: 5.5rem;
     color: #333;
-      margin: 1rem 0rem 1rem 0rem;
-  padding: 2rem 0.5rem 3rem 0rem;
 
     background-image: var(--text-gradient);
     background-clip: text;
@@ -201,20 +246,19 @@ a:visited {
     font-size: 5rem;
     line-height: 5rem;
     color: #333;
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 2rem 0rem 3rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
+  
   }
 }
 
-@media all and (max-width: 320px) {
-  .container {
+@media all and (max-width: 350px) {
+.container {
     justify-content: start;
     align-items: tart;
     margin-inline: auto;
-    padding-top: 0rem;
     width: min(95%, 90rem);
-    margin-bottom: 5rem;
-  }
+}
+    
   h1 {
     font-family: ivypresto-headline, serif;
     font-weight: 700;
@@ -224,7 +268,7 @@ a:visited {
     margin: 3rem 0rem 1rem;
     padding: 0.2rem 0.2rem 1rem 0.2rem;
   }
-  h2 .italic {
+ .italic {
     font-family: ivypresto-headline, serif;
     font-weight: 700;
     font-style: italic;
@@ -242,10 +286,23 @@ a:visited {
     font-family: ivypresto-headline, serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 4.7rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     color: #333;
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 2rem 0rem 3rem 0rem;
+    margin: 1rem 0rem 0rem 0rem;
+  
   }
+
+  .connect {
+  font-family: soleil, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #333;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+
+}
 }
